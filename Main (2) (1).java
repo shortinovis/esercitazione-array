@@ -42,7 +42,7 @@ public class Main{
         System.out.println("quanti valori vuoi inserire?");
 	    valori = t.nextInt();
 	    if(valori>100 || valori<0){
-	        System.out.println("valori tra 0 e 100 lurido trimone");
+	        System.out.println("valori tra 0 e 100");
 	    }else{
 	        continua = true;
 		for(int i=0; i<valori; i++){
@@ -60,6 +60,9 @@ public class Main{
 	            sostituto = t.nextInt();
 	            System.out.println("in che posizione lo vuoi inserire?");
 	            posizione = t.nextInt();
+	            if(posizione>100 || posizione<0){
+	                System.out.println("valori tra 0 e" + valori);
+	            }else
 	            for(int i= valori; i<= posizione; i--){
 	               numeri[i] = numeri[i-1];
 	            }
